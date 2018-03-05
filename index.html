@@ -27,7 +27,7 @@
                 height: 75px;
                 width: 100%;
                 z-index: 5;
-                background-color: rgba(30,30,30,0.8);
+                background-color: rgba(0,0,0,0.8);
                 background-blend-mode: color
             }
             .topbarBackground {
@@ -49,7 +49,8 @@
                 top: 50%;
                 transform: translateY(-50%);
                 margin-left: 5%;
-                width:20%;
+                width:15%;
+                opacity: 0.4
             }
             .titleText {
                 text-align: center;
@@ -60,10 +61,10 @@
             }
             .videoPreview {
                 text-align: center;
-                color: darkgray;
+                color: black;
                 position: relative;
                 width: 100%; 
-                padding-top: 60%;
+                padding-top: 55%;
                 margin: 0px;
             }
             .videoWrapper {
@@ -78,21 +79,29 @@
                 height: 75%;
                 left: 50%; top: 0;
                 transform: translateX(-50%)
+                    
             }
             .gameInfo {
                 background-color: gainsboro;
                 width: 100%;
-                height: 1000px;
+                height: auto;
                 position: relative;
-                padding-top: 60%;
+                padding-top: 0%;
+                text-align: center;
+                top: 0%;
+                left: 50%;
+                transform: translate(-50%,0%);
             }
             .gameWrapper {
                 color: black;
                 text-align: center;
-                position: absolute;
-                top: 0%;
-                left: 50%;
-                transform: translate(-50%,0%);
+                width: 60%;
+                margin-left: 20%;
+            }
+            .footer {
+                background-color: black;
+                height: 75px;
+                width: 100%;
             }
         </style>
     </head>
@@ -104,31 +113,54 @@
         <div class="pictureBar">
             <img width=49%; src=Img2.png>
             <img width=49%; src=Img1.png>
-            <div class="titleText">
-                <h1 style="font-size: 300%; color:yellow;";>Inverted</h1><h3 style="color: white; font-size: 150%;">A challenging puzzle game <br> Coming soon to the App Store!</h3>
+            <div class="titleText" width=100%;>
+                <h1 style="font-size: 300%; color:yellow;";><b>Inverted</b></h1><h3 style="color: white; font-size: 150%;">A challenging puzzle-adventure game <br> Coming soon to the App Store!</h3>
             </div>
         </div>
         <div class="videoPreview">
-            <h1 id="videoText">-App Preview-</h1>
+            <h1 id="videoText">App Preview</h1>
             <br>
             <div class="videoWrapper">
-                <iframe width=75% padding-top=66.66% src="https://www.youtube.com/embed/jTwp16baD7U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width=80% padding-top=66.66% src="https://www.youtube.com/embed/jTwp16baD7U?rel=0" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
         <div class="gameInfo">
-            <div class="gameWrapper">
+            <div class="gameWrapper";>
                 <h1><br><br></h1>
-                <img src=1.jpeg>
+                <img src=4.jpeg>
                 <h1><br>Journey Between Two Worlds!</h1>
-                <h3>Guide the yellow cube through intricate mazes and dangerous paths to its destination.  Oftentimes, there is no obvious path forward and you need to travel between two parallel universes to get closer to where you need to go. Good luck!</h3>
+                <h3>Trapped in a world with no through road, you have to safely navigate between two parallel universes in order to escape.  Are you ready to slip into another dimension, walk through walls, fly through air, and trudge through lava and vines to break free? </h3>
                 <h1><br><br></h1>
                 <img src=2.jpeg>
                 <h1><br>Beware of Lava & Traps!</h1>
-                <h3>Be careful when you traverse between these two worlds as danger abounds. You will be dealt damage by prickly vines, scorching lava and bottomless pits. Getting stuck in walls is also a pain, so make sure to switch worlds at the right place!</h3>
+                <h3>Be careful when you traverse between these two worlds as there is danger everywhere. You will be dealt damage if you land on prickly vines or scorching lava, or lose a life if you fall into a bottomless pit. Getting stuck in walls is also a pain, so make sure to switch worlds at the right place!</h3>
                 <h1><br><br></h1>
                 <img src=3.jpeg>
                 <h1><br>Stuck on a Level?</h1>
-                <h3>Level walkthrough coming soon!</h3>
+                <h3>The app offers 50 mind-bending puzzles plus 50 bonus levels. It's time to put on your thinking cap!</h3>
+                <br><br>
+                <h1><br><br></h1>
+                <h1>About the Developer</h1>
+                <h3>The Inverted game is the brainchild of Lucas Tan, a 7th grader in Palo Alto, California. He enjoys making online games and animated stories, and sharing them with his friends.  He started developing games on Scratch and more recently in JavaScript and Swift.  Inverted is a combnation of two games, "Pixel" and "Parallel Worlds", that he made on Scratch. </h3>
+                <h1><br><br></h1>
+                <h1>Acknowledgements</h1>
+                <h3>A big thank you to the following people for their support and encouragement, as well as their valuable feedback that helped shaped the overall game experience (in alphabetical order of last name): 
+                    Jovan Chen,
+                    Phan Yeeh Chen,
+                    Kuan Sian Go,
+                    Hsiao Ting Ong, 
+                    Perennial Ong,
+                    Placidia Ong,
+                    Chih Chao Lam,
+                    Shuya Lam,
+                    Xin Ye Young,
+                    Mom and Dad.
+                <br><br></h3>
+            </div>
+        </div> 
+        <div class="footer">
+            <div style="position: inherit; bottom: 0%; left: 0%; transform: translate(0%,120%); margin-left: 10px;">
+                © Copyright Tangrams Apps 2018.
             </div>
         </div>
     </body>
