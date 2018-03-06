@@ -27,9 +27,25 @@
             html{
                 font-size: 100%;
             }
-            @media(min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait){
+            
+            /*Iphone x*/
+            @media only screen and (device-width: 375) and (device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
                 html{
-                    font-size: 150%
+                    font-size: 130%
+                }
+            }
+            
+            /*Iphone 8*/
+            @media only screen and (device-width: 375) and (device-height: 667) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
+                html{
+                    font-size: 130%
+                }
+            }
+            
+            /*Iphone 8+ */
+            @media only screen and (device-width: 414) and (device-height: 736) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
+                html{
+                    font-size: 130%
                 }
             }
 
