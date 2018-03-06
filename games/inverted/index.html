@@ -16,12 +16,16 @@
                 margin: 0px;
                 font-family: Avenir, sans-serif;
                 color: white;
+                height: 100%;
+                min-height: 100%;
+                width: 100%;
+                min-width: 100%;
             }
             h1,h2,h3,h4,h5,h6 {
                 font-weight: 100;
             }
             html{
-                font-size: 100%
+                font-size: 100%;
             }
             @media(min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait){
                 html{
@@ -84,72 +88,73 @@
                 width: 60%;
                 margin-left: 20%;
             }
-            .footer {
-                background-color: black;
-                height: 75px;
+            
+            .container {
+                height: 100%;
+                min-height: 100%;
                 width: 100%;
+                min-width: 100%;
             }
         </style>
+        <meta charset="UTF-8">
     </head>
     <body>
-        <div id="header">sdg</div>
-        <script src="../../header.js"></script>
-        
-        <div class="pictureBar">
-            <img width=100%; src=Img.png>
-            <div class="titleText" width=100%;>
-                <h1 style="font-size: 300%; color:yellow;";><b>Inverted</b></h1><h3 style="color: white; font-size: 150%;">A challenging puzzle-adventure game <br> Coming soon to the App Store!</h3>
+        <div class="container">
+            <div id="header"></div>
+            <div class="pictureBar">
+                <img width=100%; src=Img.png>
+                <div class="titleText" width=100%;>
+                    <h1 style="font-size: 300%; color:yellow;";><b>Inverted</b></h1><h3 style="color: white; font-size: 150%;">A challenging puzzle-adventure game <br> Coming soon to the App Store!</h3>
+                </div>
             </div>
-        </div>
-        <div class="videoPreview">
-            <h1 id="videoText">App Preview</h1>
-            <br>
-            <div class="videoWrapper">
-                <iframe width=80% padding-top=66.66% src="https://www.youtube.com/embed/jTwp16baD7U?rel=0" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="videoPreview">
+                <h1 id="videoText">App Preview</h1>
+                <br>
+                <div class="videoWrapper">
+                    <iframe width=80% padding-top=66.66% src="https://www.youtube.com/embed/jTwp16baD7U?rel=0" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
-        <div class="gameInfo">
-            <div class="gameWrapper";>
-                <h1><br><br></h1>
-                <img style="width: 100%"; src=1.jpeg>
-                <h1><br>Journey Between Two Worlds!</h1>
-                <h3>Trapped in a world with no through road, you have to safely navigate between two parallel universes in order to escape!  Are you ready to slip into another dimension, walk through walls, operate gates and trapdoors, fly through air, and trudge through lava to break free? </h3>
-                <h1><br><br></h1>
-                <img style="width: 100%"; src=2.jpeg>
-                <h1><br>Danger Abounds!</h1>
-                <h3>Watch out for pitfalls when you traverse between these two worlds.  You will be dealt damage if you land in a non-space, on prickly vines or scorching lava, or fall into a bottomless pit. So make sure to switch worlds at the right place!</h3>
-                <h1><br><br></h1>
-                <img style="width: 100%"; src=3.jpeg>
-                <h1><br>Stuck on a Level?</h1>
-                <h3>The app offers 50 mind-bending puzzles and 50 bonus levels. It's time to put on your thinking cap!</h3>
-                <h1><br><br></h1>
-                <h1>About the Developer</h1>
-                <h3>The Inverted puzzle-adventure game is the brainchild of Lucas Tan, a 7th grader in Palo Alto, California. He enjoys making online games and animated stories, and sharing them with his friends.  He has been developing games on Scratch and more recently, in JavaScript and Swift.  Inverted is a combination of two games, "Pixel" and "Parallel Worlds", that he made on Scratch. </h3>
-                <h1><br><br></h1>
-                <h1>Acknowledgememts</h1>
-                <h3>A big thank you to the following people for their support and encouragement as well as their valuable feedback that helped shaped the overall game experience (in alphabetical order of last name): 
-                    Jovan Chen,
-                    Phan Yeeh Chen,
-                    Kuan Sian Go,
-                    Hsiao Ting Ong, 
-                    Perennial Ong,
-                    Placidia Ong,
-                    Chih Chao Lam,
-                    Shuya Lam,
-                    Boon Haur Loh,
-                    Andrew Tan,
-                    Xin Ye Young,
-                    Mom and Dad.</h3>
-                <h1><br><br></h1>
-                <h1>Leave a Note</h1>
-                <h3><a href="mailto: tangramsapps@gmail.com?Subject=<Inverted>%20website%20feedback" target="_top">Tell us</a> what you think of the game and what improvements you would like to see made. Thank you!</h3>
-                <h1><br><br></h1>
-            </div>
-        </div> 
-        <div class="footer">
-            <div style="position: inherit; transform: translate(0%,120%); margin-left: 10px;">
-                © Copyright Tangrams Apps 2018.
-            </div>
+            <div class="gameInfo">
+                <div class="gameWrapper";>
+                    <h1><br><br></h1>
+                    <img style="width: 100%"; src=1.jpeg>
+                    <h1><br>Journey Between Two Worlds!</h1>
+                    <h3>Trapped in a world with no through road, you have to safely navigate between two parallel universes in order to escape!  Are you ready to slip into another dimension, walk through walls, operate gates and trapdoors, fly through air, and trudge through lava to break free? </h3>
+                    <h1><br><br></h1>
+                    <img style="width: 100%"; src=2.jpeg>
+                    <h1><br>Danger Abounds!</h1>
+                    <h3>Watch out for pitfalls when you traverse between these two worlds.  You will be dealt damage if you land in a non-space, on prickly vines or scorching lava, or fall into a bottomless pit. So make sure to switch worlds at the right place!</h3>
+                    <h1><br><br></h1>
+                    <img style="width: 100%"; src=3.jpeg>
+                    <h1><br>Stuck on a Level?</h1>
+                    <h3>The app offers 50 mind-bending puzzles and 50 bonus levels. It's time to put on your thinking cap!</h3>
+                    <h1><br><br></h1>
+                    <h1>About the Developer</h1>
+                    <h3>The Inverted puzzle-adventure game is the brainchild of Lucas Tan, a 7th grader in Palo Alto, California. He enjoys making online games and animated stories, and sharing them with his friends.  He has been developing games on Scratch and more recently, in JavaScript and Swift.  Inverted is a combination of two games, "Pixel" and "Parallel Worlds", that he made on Scratch. </h3>
+                    <h1><br><br></h1>
+                    <h1>Acknowledgememts</h1>
+                    <h3>A big thank you to the following people for their support and encouragement as well as their valuable feedback that helped shaped the overall game experience (in alphabetical order of last name): 
+                        Jovan Chen,
+                        Phan Yeeh Chen,
+                        Kuan Sian Go,
+                        Hsiao Ting Ong, 
+                        Perennial Ong,
+                        Placidia Ong,
+                        Chih Chao Lam,
+                        Shuya Lam,
+                        Boon Haur Loh,
+                        Andrew Tan,
+                        Xin Ye Young,
+                        Mom and Dad.</h3>
+                    <h1><br><br></h1>
+                    <h1>Leave a Note</h1>
+                    <h3><a href="mailto: tangramsapps@gmail.com?Subject=<Inverted>%20website%20feedback" target="_top">Tell us</a> what you think of the game and what improvements you would like to see made. Thank you!</h3>
+                    <h1><br><br></h1>
+                </div>
+            </div> 
+            <div id="footer">s</div>
+            <script src="header.js"></script>
+            <script src="footer.js"></script>
         </div>
     </body>
 </html>
