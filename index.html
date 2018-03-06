@@ -10,6 +10,7 @@
                 outline: 0;
                 vertical-align: baseline;
                 background: transparent;
+                overflow-x: hidden;
             }
             body {
                 margin: 0px;
@@ -19,38 +20,19 @@
             h1,h2,h3,h4,h5,h6 {
                 font-weight: 100;
             }
+            @media(min-width:60em, max-width:90em){
+                html{
+                    font-size: 100%
+                }
+            }
             h3 {
                 color: #606060;
-            }
-            .topbar {
-                position: fixed;
-                height: 75px;
-                width: 100%;
-                z-index: 5;
-                background-color: rgba(0,0,0,0.8);
-                background-blend-mode: color
-            }
-            .topbarBackground {
-                position: absolute;
-                height: 250px;
-                width: 100%;
-                z-index: -1;
-                background-color: rgba(0,0,0,1);
-                background-blend-mode: color
             }
             .pictureBar {
                 background-color: black;
                 position: absolute;
                 margin-top: 50px;
                 width: 100%;
-            }
-            #logo {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                margin-left: 5%;
-                width:15%;
-                opacity: 0.4
             }
             .titleText {
                 text-align: center;
@@ -106,10 +88,9 @@
         </style>
     </head>
     <body>
-        <div class="topbar">
-            <img id="logo" src=TANGRAMS%20logo.png>
-        </div>
-        <div class="topbarBackground"></div>
+        <div id="header">sdg</div>
+        <script src="header.js"></script>
+        
         <div class="pictureBar">
             <img width=49%; src=Img2.png>
             <img width=49%; src=Img1.png>
@@ -127,24 +108,23 @@
         <div class="gameInfo">
             <div class="gameWrapper";>
                 <h1><br><br></h1>
-                <img src=1.jpeg>
+                <img style="width: 100%"; src=1.jpeg>
                 <h1><br>Journey Between Two Worlds!</h1>
-                <h3>Trapped in a world with no through road, you have to safely navigate between two parallel universes in order to escape.  Are you ready to slip into another dimension, walk through walls, fly through air, and trudge through lava and vines to break free? </h3>
+                <h3>Trapped in a world with no through road, you have to safely navigate between two parallel universes in order to escape!  Are you ready to slip into another dimension, walk through walls, operate gates and trapdoors, fly through air, and trudge through lava to break free? </h3>
                 <h1><br><br></h1>
-                <img src=2.jpeg>
-                <h1><br>Beware of Lava & Traps!</h1>
-                <h3>Be careful when you traverse between these two worlds as there is danger everywhere. You will be dealt damage if you land on prickly vines or scorching lava, or lose a life if you fall into a bottomless pit. Getting stuck in walls is also a pain, so make sure to switch worlds at the right place!</h3>
+                <img style="width: 100%"; src=2.jpeg>
+                <h1><br>Danger Abounds!</h1>
+                <h3>Watch out for pitfalls when you traverse between these two worlds.  You will be dealt damage if you land in a non-space, on prickly vines or scorching lava, or fall into a bottomless pit. So make sure to switch worlds at the right place!</h3>
                 <h1><br><br></h1>
-                <img src=3.jpeg>
+                <img style="width: 100%"; src=3.jpeg>
                 <h1><br>Stuck on a Level?</h1>
-                <h3>The app offers 50 mind-bending puzzles plus 50 bonus levels. It's time to put on your thinking cap!</h3>
-                <br><br>
+                <h3>The app offers 50 mind-bending puzzles and 50 bonus levels. It's time to put on your thinking cap!</h3>
                 <h1><br><br></h1>
                 <h1>About the Developer</h1>
-                <h3>The Inverted game is the brainchild of Lucas Tan, a 7th grader in Palo Alto, California. He enjoys making online games and animated stories, and sharing them with his friends.  He started developing games on Scratch and more recently in JavaScript and Swift.  Inverted is a combnation of two games, "Pixel" and "Parallel Worlds", that he made on Scratch. </h3>
+                <h3>The Inverted puzzle-adventure game is the brainchild of Lucas Tan, a 7th grader in Palo Alto, California. He enjoys making online games and animated stories, and sharing them with his friends.  He has been developing games on Scratch and more recently, in JavaScript and Swift.  Inverted is a combination of two games, "Pixel" and "Parallel Worlds", that he made on Scratch. </h3>
                 <h1><br><br></h1>
                 <h1>Acknowledgements</h1>
-                <h3>A big thank you to the following people for their support and encouragement, as well as their valuable feedback that helped shaped the overall game experience (in alphabetical order of last name): 
+                <h3>A big thank you to the following people for their support and encouragement as well as their valuable feedback that helped shaped the overall game experience (in alphabetical order of last name): 
                     Jovan Chen,
                     Phan Yeeh Chen,
                     Kuan Sian Go,
@@ -153,13 +133,18 @@
                     Placidia Ong,
                     Chih Chao Lam,
                     Shuya Lam,
+                    Boon Haur Loh,
+                    Andrew Tan,
                     Xin Ye Young,
-                    Mom and Dad.
-                <br><br></h3>
+                    Mom and Dad.</h3>
+                <h1><br><br></h1>
+                <h1>Leave a Note</h1>
+                <h3><a href="mailto: tangramsapps@gmail.com?Subject=<Inverted>%20website%20feedback" target="_top">Tell us</a> what you think of the game and what improvements you would like to see made. Thank you!</h3>
+                <h1><br><br></h1>
             </div>
         </div> 
         <div class="footer">
-            <div style="position: inherit; bottom: 0%; left: 0%; transform: translate(0%,120%); margin-left: 10px;">
+            <div style="position: inherit; transform: translate(0%,120%); margin-left: 10px;">
                 © Copyright Tangrams Apps 2018.
             </div>
         </div>
