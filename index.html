@@ -41,7 +41,7 @@
             }
             .pictureBar {
                 background-color: black;
-                position: absolute;
+                position: relative;
                 margin-top: 50px;
                 width: 100%;
                 z-index: -1;
@@ -59,8 +59,9 @@
                 color: black;
                 position: relative;
                 width: 100%; 
-                padding-top: 55%;
+                padding-top: 10%;
                 margin: 0px;
+                z-index:-1;
             }
             .videoWrapper {
                 position: relative;
@@ -97,6 +98,7 @@
                 min-height: 100%;
                 width: 100%;
                 min-width: 100%;
+                z-index: 1;
             }        
                         
             /* Iphone X */
@@ -151,15 +153,14 @@
         <div class="container">
             <div id="header"></div>
             <div class="pictureBar">
-                <img width=100%; src=Img.png>
+                <img style="z-index:-5"; width=100%; src=Img.png>
                 <div class="titleText" width=100%;>
-                    <h1 style="font-size: 300%; color:yellow;";><b>Inverted</b></h1><h3 style="color: white; font-size: 150%;">A challenging puzzle-adventure game <br>Now available on the App Store!</h3>
-                    <a target="_blank" href="https://itunes.apple.com/app/inverted-the-game/id1349594266">    
-                        <img width=30%; onclick="openAppStore()"; src="DownloadApp.png" alt="Download App">
-                    </a>
+                    <h1 style="font-size: 300%; color:yellow;";><b>Inverted</b></h1><h3 style="color: white; font-size: 150%;">A challenging puzzle-adventure game</h3>
+                    <img onclick="openAppStore()"; width=40%; src="DownloadApp.png">
                 </div>
-            </div>
-            <div class="videoPreview">
+            </div>                        
+            
+            <div class="videoPreview"
                 <h2><br></h2>
                 <h2 id="videoText">App Preview</h2>
                 <br>
