@@ -1,166 +1,179 @@
 <!Doctype html>
-<html>
+<html lang="en">
     <head>
-        <title>Tangrams Apps</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                outline: 0;
-                vertical-align: baseline;
-                background: transparent;
-                overflow-x: hidden;
-            }
-            body {
-                margin: 0px;
-                font-family: Avenir, sans-serif;
-                color: white;
-                height: 100%;
-                min-height: 100%;
-                width: 100%;
-                min-width: 100%;
-                font-size: 19px;
-            }
-            h1,h2,h3,h4,h5,h6 {
-                font-weight: 100;
-            }
-            html{
-                font-size: 100%;
-            }
-            
-            .gameWrapper {
-                color: #404040;
-                text-align: center;
-                width: 60%;
-                margin-left: 20%;
-            }
-
-            h3 { 
-                font-size: 150%;
-            }
-            .pictureBar {
-                background-color: black;
-                position: relative;
-                margin-top: 50px;
-                width: 100%;
-                z-index: -1;
-            }
-            .titleText {
-                text-align: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                z-index: 3;
-            }
-            .videoPreview {
-                text-align: center;
-                color: black;
-                position: relative;
-                width: 100%; 
-                padding-top: 10%;
-                margin: 0px;
-                z-index:-1;
-            }
-            .videoWrapper {
-                position: relative;
-                width: 100%;
-                height: 0;
-                padding-bottom: 46.14%;
-            }
-            .videoWrapper iframe {
-                position: absolute;
-                width: 75%;
-                height: 75%;
-                left: 50%; top: 0;
-                transform: translateX(-50%)        
-            }
-            .gameInfo {
-                background-color: gainsboro;
-                width: 100%;
-                height: auto;
-                position: relative;
-                padding-top: 0%;
-                text-align: center;
-                top: 0%;
-                left: 50%;
-                transform: translate(-50%,0%);
-            }
-            
-            .gameWrapper h2 {
-                color: black;
-            }
-            
-            .container {
-                position: relative;
-                height: 100%;
-                min-height: 100%;
-                width: 100%;
-                min-width: 100%;
-                z-index: 1;
-            }        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <title>Tangrams Apps</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                    <style>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            outline: 0;
+                            vertical-align: baseline;
+                            background: transparent;
+                        }
+                    body {
+                        margin: 0px;
+                        font-family: Avenir, sans-serif;
+                        color: white;
+                        height: 100%;
+                        min-height: 100%;
+                        width: 100%;
+                        min-width: 100%;
+                        font-size: 19px;
+                        overflow-x: hidden;
+                    }
+                    h1,h2,h3,h4,h5,h6 {
+                        font-weight: 100;
+                        overflow: hidden;
+                    }
+                    html{
+                        font-size: 100%;
+                    }
+                    
+                    .gameWrapper {
+                        color: #404040;
+                        text-align: center;
+                        width: 60%;
+                        margin-left: 20%;
+                    }
+                    
+                    h3 { 
+                        font-size: 150%;
+                    }
+                    .pictureBar {
+                        background-color: black;
+                        position: relative;
+                        margin-top: 50px;
+                        width: 100%;
+                        z-index: -1;
+                    }
+                    .titleText {
+                        text-align: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        z-index: 3;
+                    }
+                    .videoPreview {
+                        text-align: center;
+                        color: black;
+                        position: relative;
+                        width: 100%; 
+                        padding-top: 10%;
+                        margin: 0px;
+                        z-index:-1;
+                    }
+                    .videoWrapper {
+                        position: relative;
+                        width: 100%;
+                        height: 0;
+                        padding-bottom: 46.14%;
+                    }
+                    .videoWrapper iframe {
+                        position: absolute;
+                        width: 75%;
+                        height: 75%;
+                        left: 50%; top: 0;
+                        transform: translateX(-50%)        
+                    }
+                    .gameInfo {
+                        background-color: gainsboro;
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        padding-top: 0%;
+                        text-align: center;
+                        top: 0%;
+                        left: 50%;
+                        transform: translate(-50%,0%);
+                    }
+                    
+                    .gameWrapper h2 {
+                        color: black;
+                    }
+                    
+                    .container {
+                        position: relative;
+                        height: 100%;
+                        min-height: 100%;
+                        width: 100%;
+                        min-width: 100%;
+                        z-index: 1;
+                    }
+                    .bg-dark {
+                        background-color: black;
+                    }
+                    
+                    /* Iphone X */
+                    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
+                        .pictureBar {
+                            font-size: 140%;
+                        }
+                        .videoPreview {
+                            font-size: 220%;
+                        }
+                        .gameWrapper {
+                            font-size: 220%;
+                        }
+                    }
+                    
+                    /* Iphone 6,7,8 */
+                    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
+                        .pictureBar {
+                            font-size: 140%;
+                        }
+                        .videoPreview {
+                            font-size: 220%;
+                        }
+                        .gameWrapper {
+                            font-size: 220%;
+                        }
+                    }
+                    }
+                    
+                    /* Iphone 6+,7+,8+ */
+                    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait){
+                        .pictureBar {
+                            font-size: 140%;
+                        }
+                        .videoPreview {
+                            font-size: 220%;
+                        }
+                        .gameWrapper {
+                            font-size: 220%;
+                        }
+                    }
+                    
+                        </style>
+                    <script>
+                        function openAppStore(){
+                            window.open("https://itunes.apple.com/app/inverted-the-game/id1349594266");
+                        }
+                    </script>
+                    <meta charset="UTF-8">
                         
-            /* Iphone X */
-            @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
-                .pictureBar {
-                    font-size: 140%;
-                }
-                .videoPreview {
-                    font-size: 220%;
-                }
-                .gameWrapper {
-                    font-size: 220%;
-                }
-            }
-            
-            /* Iphone 6,7,8 */
-            @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
-                .pictureBar {
-                    font-size: 140%;
-                }
-                .videoPreview {
-                    font-size: 220%;
-                }
-                .gameWrapper {
-                    font-size: 220%;
-                }
-                }
-            }
-            
-            /* Iphone 6+,7+,8+ */
-            @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait){
-                .pictureBar {
-                    font-size: 140%;
-                }
-                .videoPreview {
-                    font-size: 220%;
-                }
-                .gameWrapper {
-                    font-size: 220%;
-                }
-            }
-
-        </style>
-        <script>
-            function openAppStore(){
-                window.open("https://itunes.apple.com/app/inverted-the-game/id1349594266");
-            }
-        </script>
-        <meta charset="UTF-8">
-    </head>
+                        </head>
     <body>
-        <div class="container">
+        <div id="header"></div>
+        <div class="container" style="padding: 0px;">
             <div id="header"></div>
-            <div class="pictureBar">
-                <img style="z-index:-5"; width=100%; src=Img.png>
-                <div class="titleText" width=100%;>
-                    <h1 style="font-size: 300%; color:yellow;";><b>Inverted</b></h1><h3 style="color: white; font-size: 150%;">A challenging puzzle-adventure game</h3>
-                    <img onclick="openAppStore()"; width=40%; src="DownloadApp.png">
-                </div>
-            </div>                        
+            <div class="jumbotron jumbotron-fluid" style="margin-top: 0px; padding-top: 0px; background-color: white;">
+                <div class="container" style="padding: 0px;">
+                    <img style="z-index:-5"; width=100%; src=Img.png>
+                        <div class="titleText" width=100%;>
+                            <h1 class="display-4" style="color:yellow;">Inverted</h1>
+                            <h2 class="lead" style="font-size: 150%;">A challeging puzzle-adventure game</h2>
+                            <img onclick="openAppStore()"; width=40%; src="/DownloadApp.png">
+                                </div>
+                        </div>
+            </div>                    
             
-            <div class="videoPreview"
+            <div class="videoPreview">
                 <h2><br></h2>
                 <h2 id="videoText">App Preview</h2>
                 <br>
@@ -172,47 +185,53 @@
                 <div class="gameWrapper";>
                     <h2><br></h2>
                     <img style="width: 100%"; src=1.jpeg>
-                    <h2><br>Journey Between Two Worlds!</h2>
-                    Trapped in a world with no through road, you have to safely navigate between two parallel universes in order to escape!  Are you ready to slip into another dimension, walk through walls, operate gates and trapdoors, fly through air, and trudge through lava to break free? 
-                    <h2><br><br></h2>
-                    <img style="width: 100%"; src=2.jpeg>
-                    <h2><br>Danger Abounds!</h2>
-                    Watch out for pitfalls when you traverse between these two worlds.  You will be dealt damage if you land on a non-space, lava or prickly vines. So make sure to switch worlds at the right place!
-                    <h2><br><br></h2>
-                    <img style="width: 100%"; src=3.jpeg>
-                    <h2><br>Stuck on a Level?</h2>
-                    The app offers 50 mind-bending puzzles and 50 bonus levels. It's time to put on your thinking cap!
-                    <h2><br><br></h2>
-                    <h2>About the Developer</h2>
-                    The Inverted puzzle-adventure game is the brainchild of Lucas Tan, a 7th grader in Palo Alto, California. He enjoys making online games and animated stories, and sharing them with his friends.  He has been developing games on Scratch and more recently, in JavaScript and Swift.  Inverted is a combination of two games, "Pixel" and "Parallel Worlds", that he made on Scratch. 
-                    <h2><br><br></h2>
-                    <h2>Acknowledgments</h2>
-                    A big thank you to the following people for their support and encouragement as well as their valuable feedback that helped shaped the overall game experience (in alphabetical order of last name): 
-                        Jovan Chen,
-                        Phan Yeeh Chen,
-                        Riley Chen,
-                        Kuan Sian Go,
-                        Hsiao Ting Ong, 
-                        Perennial Ong,
-                        Placidia Ong,
-                        Chih Chao Lam,
-                        Shuya Lam,
-                        Boon Haur Loh,
-                        Andrew Tan,
-                        Xin Ye Young,
-                        
-                        Mom and Dad.
-                    <h2><br><br></h2>
-                    <h2>Leave a Note</h2>
-                    <a href="mailto: tangramscontactus@gmail.com?Subject=<Inverted>%20website%20feedback" target="_top">Tell us</a> what you think of the game and what improvements you would like to see made. Thank you!
-                    <h2><br><br></h2>
-                    <br><br>
-                    <br><br>
-                </div>
+                        <h2><br>Journey Between Two Worlds!</h2>
+                        Trapped in a world with no through road, you have to safely navigate between two parallel universes in order to escape!  Are you ready to slip into another dimension, walk through walls, operate gates and trapdoors, fly through air, and trudge through lava to break free? 
+                        <h2><br><br></h2>
+                        <img style="width: 100%"; src=2.jpeg>
+                            <h2><br>Danger Abounds!</h2>
+                            Watch out for pitfalls when you traverse between these two worlds.  You will be dealt damage if you land on a non-space, lava or prickly vines. So make sure to switch worlds at the right place!
+                            <h2><br><br></h2>
+                            <img style="width: 100%"; src=3.jpeg>
+                                <h2><br>Stuck on a Level?</h2>
+                                The app offers 50 mind-bending puzzles and 50 bonus levels. It's time to put on your thinking cap!
+                                <h2><br><br></h2>
+                                <h2>About the Developer</h2>
+                                The Inverted puzzle-adventure game is the brainchild of Lucas Tan, a 7th grader in Palo Alto, California. He enjoys making online games and animated stories, and sharing them with his friends.  He has been developing games on Scratch and more recently, in JavaScript and Swift.  Inverted is a combination of two games, "Pixel" and "Parallel Worlds", that he made on Scratch. 
+                                <h2><br><br></h2>
+                                <h2>Acknowledgments</h2>
+                                A big thank you to the following people for their support and encouragement as well as their valuable feedback that helped shaped the overall game experience (in alphabetical order of last name): 
+                                Jovan Chen,
+                                Phan Yeeh Chen,
+                                Riley Chen,
+                                Kuan Sian Go,
+                                Hsiao Ting Ong, 
+                                Perennial Ong,
+                                Placidia Ong,
+                                Chih Chao Lam,
+                                Shuya Lam,
+                                Boon Haur Loh,
+                                Andrew Tan,
+                                Xin Ye Young,
+                                
+                                Mom and Dad.
+                                <h2><br><br></h2>
+                                <h2>Leave a Note</h2>
+                                <a href="mailto: tangramscontactus@gmail.com?Subject=<Inverted>%20website%20feedback" target="_top">Tell us</a> what you think of the game and what improvements you would like to see made. Thank you!
+                                <h2><br><br></h2>
+                                <br><br>
+                                <br><br>
+                                </div>
             </div> 
-            <div id="footer">s</div>
-            <script src="header.js"></script>
-            <script src="footer.js"></script>
+            <div id="footer"></div>
+            <script src="/header.js"></script>
+            <script src="/footer.js"></script>
         </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
     </body>
 </html>
